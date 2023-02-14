@@ -22,6 +22,7 @@ class Dw9DeliveryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ApplicationBiding(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Delivery App',
         theme: ThemeConfig.theme,
         navigatorKey: _navKey,

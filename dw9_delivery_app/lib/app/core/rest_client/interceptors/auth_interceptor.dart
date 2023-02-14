@@ -34,8 +34,6 @@ class AuthInterceptor extends Interceptor {
       } catch (e) {
         GlobalContext.i.loginExpire();
       }
-
-      handler.next(err);
     } else {
       handler.next(err);
     }
