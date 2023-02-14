@@ -33,40 +33,40 @@ class _ProductDetailPageState
 
   void _showConfirmDelete(int amount) {
     showDialog(
-        context: context,
-        barrierDismissible: true,
-        builder: (context) {
-          return AlertDialog(
-            title: const Text('Deseja excluir o produto?'),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: Text(
-                  'Cancelar',
-                  style:
-                      context.textStyles.textBold.copyWith(color: Colors.red),
-                ),
+      context: context,
+      barrierDismissible: true,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Deseja excluir o produto?'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text(
+                'Cancelar',
+                style: context.textStyles.textBold.copyWith(color: Colors.red),
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                  Navigator.of(context).pop(
-                    OrderProductDto(
-                      product: widget.product,
-                      amount: amount,
-                    ),
-                  );
-                },
-                child: Text(
-                  'Confirmar',
-                  style: context.textStyles.textBold,
-                ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+                Navigator.of(context).pop(
+                  OrderProductDto(
+                    product: widget.product,
+                    amount: amount,
+                  ),
+                );
+              },
+              child: Text(
+                'Confirmar',
+                style: context.textStyles.textBold,
               ),
-            ],
-          );
-        });
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override

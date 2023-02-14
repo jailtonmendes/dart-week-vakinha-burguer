@@ -79,6 +79,7 @@ class _LoginPageState extends BaseState<LoginPage, LoginController> {
                         height: 30,
                       ),
                       TextFormField(
+                        obscureText: true,
                         decoration: const InputDecoration(labelText: 'Senha'),
                         validator: Validatorless.multiple([
                           Validatorless.required('Senha obrigatória'),

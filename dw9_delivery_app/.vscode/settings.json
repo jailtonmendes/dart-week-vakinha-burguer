@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "dart.closingLabels": "#5e5e86a1"
+    },
+    "editor.semanticTokenColorCustomizations": {},
+    "editor.codeLensFontFamily": "Fira Code",
+    "scm.inputFontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": ""
+}
